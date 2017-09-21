@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   error: any;
   constructor(public af: AngularFire,private router: Router) {
 
-      this.af.auth.subscribe(auth => { 
+      this.af.auth.subscribe(auth => {
       if(auth) {
         this.router.navigateByUrl('/members');
       }
@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
 
   }
 
+  /*
   loginFb() {
     this.af.auth.login({
       provider: AuthProviders.Facebook,
@@ -48,6 +49,7 @@ export class LoginComponent implements OnInit {
         this.error = err;
       })
   }
+  */
 
 
   ngOnInit() {
