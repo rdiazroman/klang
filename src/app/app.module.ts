@@ -14,11 +14,12 @@ import { routes } from './app.routes';
 
 // Must export the config
 export const firebaseConfig = {
-  apiKey: 'AIzaSyAaTLLTBfT8-tlCXOKlp4LrwQzhVWjbM1Q',
-  authDomain: 'angular-pre.firebaseapp.com',
-  databaseURL: 'https://angular-pre.firebaseio.com',
-  storageBucket: 'angular-pre.appspot.com',
-  messagingSenderId: '796422970338'
+  apiKey: "AIzaSyCAI-kfzVhSmr1aUJ4N-gLyjozI6OR8uZA",
+  authDomain: "klang-e9507.firebaseapp.com",
+  databaseURL: "https://klang-e9507.firebaseio.com",
+  projectId: "klang-e9507",
+  storageBucket: "klang-e9507.appspot.com",
+  messagingSenderId: "316280964652"
 };
 
 @NgModule({
