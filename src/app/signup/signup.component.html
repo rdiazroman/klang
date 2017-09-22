@@ -13,4 +13,11 @@
 
     <button type="submit" [disabled]="!formData.valid" class="basic-btn">Create my account</button>
   </form>
+
+
+  <ul>
+    <li *ngFor="let code of (codes$ | async)" >
+      <p class="used_{{code.used}}" id={}> {{ code.code }} </p>
+    </li>
+  </ul>
 </div>
