@@ -14,9 +14,11 @@ export class EmailComponent implements OnInit {
 
     state: string = '';
     error: any;
+    email: any;
+    password: any;
 
     constructor(public af: AngularFire,private router: Router) {
-      this.af.auth.subscribe(auth => { 
+      this.af.auth.subscribe(auth => {
         if(auth) {
           this.router.navigateByUrl('/members');
         }

@@ -20,6 +20,9 @@ export class SignupComponent implements OnInit {
   availableCodes = [];
   codes;
   formData;
+  code;
+  email;
+  password;
 
   constructor(public af: AngularFire,private router: Router) {
 

@@ -9,15 +9,10 @@
 
     <input type="text" placeholder="Code" (ngModel)="code" name="code" class="txt" required>
     <input type="text" placeholder="Email address.." (ngModel)="email" name="email" class="txt" required>
-    <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required>
+    <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
 
     <button type="submit" [disabled]="!formData.valid" class="basic-btn">Create my account</button>
   </form>
 
 
-  <ul>
-    <li *ngFor="let code of (codes$ | async)" >
-      <p class="used_{{code.used}}" id={}> {{ code.code }} </p>
-    </li>
-  </ul>
 </div>
