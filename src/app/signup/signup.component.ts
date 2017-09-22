@@ -17,6 +17,7 @@ export class SignupComponent implements OnInit {
 
   state: string = '';
   error: any;
+  availableCodes = [];
   codes;
   formData;
 
@@ -28,49 +29,43 @@ export class SignupComponent implements OnInit {
   onSubmit(formData) {
     if(formData.valid) {
       this.formData = formData;
-      console.log('formData.value: ' + formData.value);
+      //console.log('formData.value: ' + formData.value);
+      console.log(this.availableCodes);
 
-      var codes$: FirebaseListObservable<any[]>;
+      if (this.availableCodes.indexOf(formData.value.code) > -1) {
+          //In the array!
+          console.log('OK');
+          this.af.auth.createUser({
+            email: formData.value.email,
+            password: formData.value.password
+          }).then(
+            (success) => {
 
-      this.codes = this.af.database.list('Codes',{preserveSnapshot:true});
-      this.codes.subscribe(snapshots => {
-        snapshots.forEach(snapshot => {
-            console.log(snapshot.val().code);
-            //this.agencyID.push(snapshot.val()._id);
+              console.log(success);
 
-        });
-
-    });
-
-
-
-
+            this.router.navigate(['/members'])
+          }).catch(
+            (err) => {
+            this.error = err;
+          })
+      } else {
+          //Not in the array
+          console.log('NOK');
+      }
 
 
-
-
-      this.af.auth.createUser({
-        email: formData.value.email,
-        password: formData.value.password
-      }).then(
-        (success) => {
-
-          console.log(success);
-
-        this.router.navigate(['/members'])
-      }).catch(
-        (err) => {
-        this.error = err;
-      })
     }
   }
 
   ngOnInit() {
-      this.codes = this.af.database.list('/Codes', {
-        query: {
-            orderByChild: 'createdAt'
-        }
+    this.codes = this.af.database.list('Codes',{preserveSnapshot:true});
+    this.codes.subscribe(snapshots => {
+      snapshots.forEach(snapshot => {
+          if(snapshot.val().used === "false"){
+            this.availableCodes.push(snapshot.val().code);
+          }
       });
+    });
   }
 
 }
