@@ -23,13 +23,17 @@ export class SignupComponent implements OnInit {
   code;
   email;
   password;
+  users;
 
   constructor(public af: AngularFire,private router: Router) {
-
+      this.users = af.database.list('/Users');
   }
 
 
   onSubmit(formData) {
+
+    var self = this;
+
     if(formData.valid) {
       this.formData = formData;
       //console.log('formData.value: ' + formData.value);
@@ -38,18 +42,26 @@ export class SignupComponent implements OnInit {
       if (this.availableCodes.indexOf(formData.value.code) > -1) {
           //In the array!
           console.log('OK');
+
           this.af.auth.createUser({
-            email: formData.value.email,
-            password: formData.value.password
+              email: formData.value.email,
+              password: formData.value.password
           }).then(
-            (success) => {
+              (success) => {
 
-              console.log(success);
+                  var userObject = {
+                      code: formData.value.code,
+                      email: formData.value.email,
+                      password: formData.value.password
+                  };
 
-            this.router.navigate(['/members'])
+                  self.addToUserList(userObject);
+
+
+                  self.router.navigate(['/members'])
           }).catch(
-            (err) => {
-            this.error = err;
+              (err) => {
+                  this.error = err;
           })
       } else {
           //Not in the array
@@ -58,6 +70,11 @@ export class SignupComponent implements OnInit {
 
 
     }
+  }
+
+
+  addToUserList(item: any) {
+      this.users.push(item);
   }
 
   ngOnInit() {
