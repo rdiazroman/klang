@@ -55,8 +55,13 @@ export class SignupComponent implements OnInit {
                       password: formData.value.password
                   };
 
-                  self.addToUserList(userObject);
+                  var codeObject = {
+                      code: formData.value.code,
+                      used: "true"
+                  };
 
+                  self.addToUserList(userObject);
+                  self.updateCodeList(codeObject);
 
                   self.router.navigate(['/members'])
           }).catch(
@@ -77,8 +82,13 @@ export class SignupComponent implements OnInit {
       this.users.push(item);
   }
 
+  updateCodeList(codeObject: any){
+    this.af.database.object('/Codes/' + codeObject.code).update(codeObject);
+  }
+
   ngOnInit() {
     this.codes = this.af.database.list('Codes',{preserveSnapshot:true});
+
     this.codes.subscribe(snapshots => {
       snapshots.forEach(snapshot => {
           if(snapshot.val().used === "false"){
