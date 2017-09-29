@@ -5,13 +5,16 @@
 
   <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
 
+  <span [ngClass]="'hidden'"> error in the code </span>
+
   <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
 
-    <input type="text" placeholder="Code" (ngModel)="code" name="code" class="txt" required>
+    <input type="text" placeholder="Code" (ngModel)="code" name="code" class="txt form-control text-line" required>
+    <input type="text" placeholder="Your name" (ngModel)="name" name="name" class="txt form-control text-line" required>
     <input type="text" placeholder="Email address" (ngModel)="email" name="email" class="txt" required>
     <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
 
-    <button type="submit" [disabled]="!formData.valid" class="basic-btn">Create my account</button>
+    <button type="submit" class="basic-btn">Create my account</button>
   </form>
 
 

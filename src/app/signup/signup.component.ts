@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { Router } from '@angular/router';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { moveIn, fallIn } from '../router.animations';
+import {ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-signup',
@@ -13,6 +14,9 @@ import { moveIn, fallIn } from '../router.animations';
   animations: [moveIn(), fallIn()],
   host: {'[@moveIn]': ''}
 })
+
+
+
 export class SignupComponent implements OnInit {
 
   state: string = '';
@@ -24,6 +28,7 @@ export class SignupComponent implements OnInit {
   email;
   password;
   users;
+  red;
 
   constructor(public af: AngularFire,private router: Router) {
       this.users = af.database.list('/Users');
@@ -36,8 +41,6 @@ export class SignupComponent implements OnInit {
 
     if(formData.valid) {
       this.formData = formData;
-      //console.log('formData.value: ' + formData.value);
-      console.log(this.availableCodes);
 
       if (this.availableCodes.indexOf(formData.value.code) > -1) {
           //In the array!
@@ -51,6 +54,7 @@ export class SignupComponent implements OnInit {
 
                   var userObject = {
                       code: formData.value.code,
+                      name: formData.value.name,
                       email: formData.value.email,
                       password: formData.value.password
                   };
@@ -71,6 +75,7 @@ export class SignupComponent implements OnInit {
       } else {
           //Not in the array
           console.log('NOK');
+          this.error = 'The code is invalid or already used';
       }
 
 
