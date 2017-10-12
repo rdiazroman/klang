@@ -28,7 +28,7 @@ export class SignupComponent implements OnInit {
   email;
   password;
   users;
-  red;
+  css_class;
 
   constructor(public af: AngularFire,private router: Router) {
       this.users = af.database.list('/Users');
@@ -59,9 +59,15 @@ export class SignupComponent implements OnInit {
                       password: formData.value.password
                   };
 
-                  var codeObject = {
+                  // Master code AcUrr78x
+                  let markAsUsed = "true";
+                  if (formData.value.code === 'AcUrr78x'){
+                      markAsUsed = "false";
+                  }
+
+                  let codeObject = {
                       code: formData.value.code,
-                      used: "true"
+                      used: markAsUsed
                   };
 
                   self.addToUserList(userObject);
@@ -75,7 +81,9 @@ export class SignupComponent implements OnInit {
       } else {
           //Not in the array
           console.log('NOK');
-          this.error = 'The code is invalid or already used';
+          self.error = 'The code is invalid or already used';
+          self.css_class = 'red';
+          self.formData.value.code = 'code invalid, try again'
       }
 
 
@@ -89,6 +97,11 @@ export class SignupComponent implements OnInit {
 
   updateCodeList(codeObject: any){
     this.af.database.object('/Codes/' + codeObject.code).update(codeObject);
+  }
+
+
+  focusFunction(){
+    this.css_class = '';
   }
 
   ngOnInit() {

@@ -5,11 +5,9 @@
 
   <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
 
-  <span [ngClass]="'hidden'"> error in the code </span>
-
   <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
 
-    <input type="text" placeholder="Code" (ngModel)="code" name="code" class="txt form-control text-line" required>
+    <input type="text" placeholder="Secret Code" (ngModel)="code" name="code" class="txt form-control text-line {{css_class}}" (focus)="focusFunction()" required>
     <input type="text" placeholder="Your name" (ngModel)="name" name="name" class="txt form-control text-line" required>
     <input type="text" placeholder="Email address" (ngModel)="email" name="email" class="txt" required>
     <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
