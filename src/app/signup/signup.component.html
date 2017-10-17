@@ -12,6 +12,9 @@
     <input type="text" placeholder="Email address" (ngModel)="email" name="email" class="txt" required>
     <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
 
+    <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" /> Agree with conditions
+
+
     <button type="submit" class="basic-btn">Create my account</button>
   </form>
 
