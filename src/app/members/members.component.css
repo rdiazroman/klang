@@ -1,3 +1,8 @@
+body {
+    background-image: url('../../assets/images/background.jpg') !important;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
 #toolbar {
     padding:0;
     width:70%;

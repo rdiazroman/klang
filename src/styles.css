@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background:#333;
-    padding-top:4em;
+    background-image: url('assets/images/background_2.jpg');
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .form-container {
-    background: #ccc;
+    background: #F2F2F0;
     padding:3.5em;
     width:500px;
     position:fixed;
@@ -22,14 +22,22 @@ button {
 }
 
 .basic-btn {
-    background: #3B8598;
-    color:white;
+    margin-top: 2em;
+    color: #000;
+    background: linear-gradient(#dddddd, #888888);
+    color: black;
+    height: 2em;
+    float: right;
+    width: 10rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+    padding: 0;
 }
 
 input.txt {
     background:#fff !important;
-    padding:1.3em 1em;
-    font-size:1.3em;
+    padding:0.1em 1em;
+    font-size:1.2em;
     border: 1px solid #BBBBBB;
 }
 

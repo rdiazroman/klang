@@ -5,22 +5,23 @@
   <br />
   <br />
 
-  <h1>Register:</h1>
+  <img src="../assets/images/register_text.jpg" />
 
   <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
 
   <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
 
-    <input type="text" placeholder="Secret Code" (ngModel)="code" name="code" class="txt form-control text-line {{css_class}}" (focus)="focusFunction()" required>
-    <input type="text" placeholder="Your name" (ngModel)="name" name="name" class="txt form-control text-line" required>
-    <input type="text" placeholder="Email address" (ngModel)="email" name="email" class="txt" required>
+    <input type="text" placeholder="code" (ngModel)="code" name="code" class="txt form-control text-line {{css_class}}" (focus)="focusFunction()" required>
+    <input type="text" placeholder="name" (ngModel)="name" name="name" class="txt form-control text-line" required>
+    <input type="text" placeholder="e-mail" (ngModel)="email" name="email" class="txt form-control text-line" required>
+
     <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
 
     <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
     Agree with <a routerLink="/terms"> terms </a>
 
 
-    <button type="submit" class="basic-btn">Create my account</button>
+    <button type="submit" class="basic-btn">Send</button>
   </form>
 
 

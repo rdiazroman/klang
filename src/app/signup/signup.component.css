@@ -1,7 +1,11 @@
 .red {
-  border: 2px solid red;
+    border: 2px solid red;
 }
 
 .hidden{
-  display: none;
+    display: none;
+}
+
+form {
+    margin-top: 4rem;
 }
