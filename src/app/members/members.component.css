@@ -20,12 +20,26 @@ header {
 }
 
 #page img {
-    margin-top:30px;
+    margin-top:3rem;
 }
 
 h2 {
     margin:0;
 }
+
+.container {
+    width: 100%;
+    padding-left: 0px;
+}
+
+.container ul {
+    margin-left: 0rem;
+}
+
+.nav-tabs {
+    border-bottom: 0.2rem solid white;
+}
+
 
 
 @media (max-width: 600px) {
