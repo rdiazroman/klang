@@ -26,7 +26,7 @@ export class MembersComponent implements OnInit {
 
   logout() {
      this.af.auth.logout();
-     this.router.navigateByUrl('/login');
+     this.router.navigateByUrl('/login-email');
   }
 
 

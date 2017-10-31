@@ -11,7 +11,7 @@ import { TermsComponent } from './terms/terms.component';
 
 export const router: Routes = [
     { path: '', redirectTo: 'signup', pathMatch: 'full' },
-    { path: 'login', component: LoginComponent },
+    { path: 'login', component: EmailComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'login-email', component: EmailComponent },
     { path: 'terms', component: TermsComponent },
