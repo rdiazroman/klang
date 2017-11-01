@@ -1,7 +1,12 @@
-.backgroundClass {
-    background-image: url('../../assets/images/login_text.png') !important;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+.members-wrapper {
+    background-image: url("../../assets/images/background.jpg") !important;
+    height: 500vw;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
+
 
 
 #toolbar {
