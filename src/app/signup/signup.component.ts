@@ -30,6 +30,7 @@ export class SignupComponent implements OnInit {
   agreeConditions;
   users;
   css_class;
+  name;
 
   constructor(public af: AngularFire,private router: Router) {
       this.users = af.database.list('/Users');

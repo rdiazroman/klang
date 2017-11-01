@@ -1,15 +1,32 @@
 <div class="members-wrapper">
   <div class="form-container" id="toolbar">
       <header [@fallIn]="state">
-        <button (click)="logout()" class="basic-btn">Logout!</button>
+        <button (click)="logout()" class="basic-btn">Logout</button>
       </header>
       <div id="page" [@moveInLeft]="state">
 
         <div class="container">
           <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-            <li><a data-toggle="tab" href="#tickets">Tickets</a></li>
+            <li class="active">
+                <a data-toggle="tab" href="#home">
+                    <img src="../assets/images/info_label.png" />
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu1">
+                    <img src="../assets/images/tickets_label.png" />
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#tickets">
+                    <img src="../assets/images/contact_label.png" />
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#hall">
+                    <img src="../assets/images/hall_label.png" />
+                </a>
+            </li>
             <!-- <li><a data-toggle="tab" href="#menu3">Menu 3</a></li> -->
           </ul>
 

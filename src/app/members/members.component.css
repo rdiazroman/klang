@@ -1,5 +1,5 @@
 .members-wrapper {
-    background-image: url("../../assets/images/background.jpg") !important;
+    background-image: url("../../assets/images/background.jpg");
     height: 500vw;
     width: 100%;
     position: relative;
@@ -60,6 +60,25 @@ h2 {
     margin-left:-250px;
 }
 
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs>li>a {
+    padding: 0;
+    margin-right: 0;
+    border: 0px solid #ddd;
+}
+
+li.active {
+    border-bottom: 4px solid #000;
+}
+
+.nav>li>a>img {
+    max-width: none;
+    margin-top: 0 !important;
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
     #page {
