@@ -11,6 +11,7 @@ import { MembersComponent } from './members/members.component';
 import { TermsComponent } from './terms/terms.component';
 import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
+import { TRANSLATION_PROVIDERS, TranslatePipe, TranslateService }   from './translate';
 
 
 // Must export the config
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     EmailComponent,
     SignupComponent,
     MembersComponent,
-    TermsComponent
+    TermsComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,

@@ -12,12 +12,15 @@
 #toolbar {
     padding:0;
     width:70%;
-    margin-left:-35%;
+    margin-left:-30%;
 }
 
 header {
     background:#3B8598;
     width:100%;
+    top: 0;
+    left: 0;
+    position: relative;
 }
 
 .basic-btn {
@@ -80,6 +83,15 @@ li.active {
     cursor: pointer;
 }
 
+.nav li a img {
+    height: 50px;
+}
+
+.tab-content{
+    margin-top: 2em;
+}
+
+
 @media (max-width: 600px) {
     #page {
         padding:1em;
@@ -87,5 +99,19 @@ li.active {
     #toolbar {
         width:90%;
         margin-left: -45%;
+    }
+
+    .nav-tabs {
+        margin-top: 30px;
+    }
+    .nav li a img {
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 847px) {
+    .nav li a img {
+        height: 25px;
     }
 }
