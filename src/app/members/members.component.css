@@ -91,6 +91,11 @@ li.active {
     margin-top: 2em;
 }
 
+.imagelogo {
+    width: 6.0rem;
+    height: 6.0rem;
+}
+
 
 @media (max-width: 600px) {
     #page {

@@ -1,10 +1,16 @@
 <div class="members-wrapper">
 
-  <header [@fallIn]="state">
-    <button (click)="logout()" class="basic-btn">Logout</button>
-  </header>
+
 
   <div class="form-container" id="toolbar">
+
+
+      <img class="imagelogo" src="../assets/images/logo.svg" />
+
+      <header [@fallIn]="state">
+          <button (click)="logout()" class="basic-btn">Logout</button>
+      </header>
+
 
       <div id="page" [@moveInLeft]="state">
 
