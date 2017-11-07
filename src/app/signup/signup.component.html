@@ -1,28 +1,29 @@
-<div class="form-container">
+<div class="signup-wrapper">
+    <div class="form-container">
 
-  <a routerLink="/login-email" id="goback">Login</a>
+      <a routerLink="/login-email" id="goback">Login</a>
 
-  <br />
-  <br />
+      <br />
+      <br />
 
-  <img src="../assets/images/register_text.jpg" />
+      <img src="../assets/images/register_text.jpg" />
 
-  <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
+      <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
 
-  <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+      <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
 
-    <input type="text" placeholder="code" (ngModel)="code" name="code" class="txt form-control text-line {{css_class}}" (focus)="focusFunction()" required>
-    <input type="text" placeholder="name" (ngModel)="name" name="name" class="txt form-control text-line" required>
-    <input type="text" placeholder="e-mail" (ngModel)="email" name="email" class="txt form-control text-line" required>
+        <input type="text" placeholder="code" (ngModel)="code" name="code" class="txt form-control text-line {{css_class}}" (focus)="focusFunction()" required>
+        <input type="text" placeholder="name" (ngModel)="name" name="name" class="txt form-control text-line" required>
+        <input type="text" placeholder="e-mail" (ngModel)="email" name="email" class="txt form-control text-line" required>
 
-    <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
+        <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
 
-    <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
-    Agree with <a routerLink="/terms"> terms </a>
-
-
-    <button type="submit" class="basic-btn">Send</button>
-  </form>
+        <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
+        Agree with <a routerLink="/terms"> terms </a>
 
 
+        <button type="submit" class="basic-btn">Send</button>
+      </form>
+
+    </div>
 </div>
