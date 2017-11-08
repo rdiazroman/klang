@@ -1,10 +1,9 @@
 .members-wrapper {
     background-image: url("../../assets/images/background.jpg");
-    height: 500vw;
+    height: 1000px;
     width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    overflow-y: scroll;
 }
 
 
@@ -16,11 +15,20 @@
 }
 
 header {
-    background:#3B8598;
-    width:100%;
+    width:50rem;
     top: 0;
     left: 0;
     position: relative;
+    border: 1px solid;
+}
+
+.form-container {
+    background: transparent;
+    padding:3.5em;
+    width:500px;
+    position:absolute;
+    left:50%;
+    margin-left:-250px;
 }
 
 .basic-btn {
@@ -29,8 +37,7 @@ header {
 }
 
 #page {
-    padding:3em;
-    margin:0;
+    margin-top: 1em;
 }
 
 #page img {
@@ -39,6 +46,10 @@ header {
 
 h2 {
     margin:0;
+}
+
+app-members {
+    position: absolute;
 }
 
 .container {
@@ -54,7 +65,7 @@ h2 {
     border-bottom: 0.2rem solid white;
 }
 
-.form-container {
+.tainer {
     background: transparent;
     padding:3.5em;
     width:500px;
@@ -104,6 +115,10 @@ li.active {
     #toolbar {
         width:90%;
         margin-left: -45%;
+    }
+
+    header{
+        width: 23rem
     }
 
     .nav-tabs {
