@@ -15,8 +15,8 @@
         <input type="text" placeholder="code" (ngModel)="code" name="code" class="txt form-control text-line {{css_class}}" (focus)="focusFunction()" required>
         <input type="text" placeholder="name" (ngModel)="name" name="name" class="txt form-control text-line" required>
         <input type="text" placeholder="e-mail" (ngModel)="email" name="email" class="txt form-control text-line" required>
-
         <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
+        <input type="password" placeholder="Retype Password" (ngModel)="password2" name="password2" class="txt form-control text-line" required>
 
         <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
         Agree with <a routerLink="/terms"> terms </a>

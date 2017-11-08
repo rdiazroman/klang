@@ -38,7 +38,7 @@ export class EmailComponent implements OnInit {
         method: AuthMethods.Password,
       }).then(
         (success) => {
-        console.log(success);
+        console.log('success: ' + success);
         this.router.navigate(['/members']);
       }).catch(
         (err) => {

@@ -27,6 +27,7 @@ export class SignupComponent implements OnInit {
   code;
   email;
   password;
+  password2;
   agreeConditions;
   users;
   css_class;
@@ -49,43 +50,56 @@ export class SignupComponent implements OnInit {
 
             if (this.availableCodes.indexOf(formData.value.code) > -1) {
                 //In the array! Code is available to use
-                console.log('OK');
 
-                this.af.auth.createUser({
-                    email: formData.value.email,
-                    password: formData.value.password
-                }).then(
-                    (success) => {
 
-                        var userObject = {
-                            code: formData.value.code,
-                            name: formData.value.name,
-                            email: formData.value.email,
-                            password: formData.value.password
-                        };
+                if (formData.value.password == formData.value.password2) {
 
-                        // Master code AcUrr78x
-                        let markAsUsed = "true";
-                        if (formData.value.code === 'AcUrr78x'){
-                            markAsUsed = "false";
-                        }
+                    this.af.auth.createUser({
+                        email: formData.value.email,
+                        password: formData.value.password
+                    }).then(
+                        (success) => {
 
-                        let codeObject = {
-                            code: formData.value.code,
-                            used: markAsUsed
-                        };
+                            var userObject = {
+                                code: formData.value.code,
+                                name: formData.value.name,
+                                email: formData.value.email,
+                                password: formData.value.password
+                            };
 
-                        self.addToUserList(userObject);
-                        self.updateCodeList(codeObject);
+                            // Master codes
+                            let markAsUsed = "true";
+                            if (formData.value.code === 'K-H_Marc' ||
+                                formData.value.code === 'K-H_Phil' ||
+                                formData.value.code === 'K-H_Tom' ||
+                                formData.value.code === 'K-H_Dani'
+                                ){
+                                markAsUsed = "false";
+                            }
 
-                        self.router.navigate(['/members'])
-                }).catch(
-                    (err) => {
-                        this.error = err;
-                })
+                            let codeObject = {
+                                code: formData.value.code,
+                                used: markAsUsed
+                            };
+
+                            self.addToUserList(userObject);
+                            self.updateCodeList(codeObject);
+
+                            self.router.navigate(['/members'])
+                    }).catch(
+                        (err) => {
+                            this.error = err;
+                    })
+
+
+
+                } // password confirmation is wrong
+                else {
+                    self.error = 'Set your password correctly';
+                }
+
             } else {
                 //Not in the array...The code is not available to use.
-                console.log('NOK');
                 self.error = 'The code is invalid or already used';
                 self.css_class = 'red';
                 self.formData.value.code = 'code invalid, try again'

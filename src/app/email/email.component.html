@@ -1,5 +1,5 @@
 <div class="form-container">
-    <a routerLink="/signup" id="goback">Go back</a>
+    <a routerLink="/signup" id="goback">Register</a>
 
     <img src="../assets/images/login_text.png" />
 
@@ -11,6 +11,6 @@
       <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required>
 
       <button type="submit" [disabled]="!formData.valid" class="basic-btn">Log in</button>
-      <a routerLink="/signup" class="alc button-reg">Register here</a>
+
   </form>
 </div>

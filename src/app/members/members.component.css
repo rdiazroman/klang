@@ -11,15 +11,14 @@
 #toolbar {
     padding:0;
     width:70%;
-    margin-left:-30%;
+    margin-left:-20%;
 }
 
 header {
-    width:50rem;
+    width:50em;
     top: 0;
     left: 0;
     position: relative;
-    border: 1px solid;
 }
 
 .form-container {
@@ -38,6 +37,7 @@ header {
 
 #page {
     margin-top: 1em;
+    width: 50em;
 }
 
 #page img {
@@ -54,7 +54,6 @@ app-members {
 
 .container {
     width: 100%;
-    padding-left: 0px;
 }
 
 .container ul {
@@ -103,10 +102,13 @@ li.active {
 }
 
 .imagelogo {
-    width: 6.0rem;
-    height: 6.0rem;
+    width: 12rem;
+    height: 10rem;
+    margin-left: 35%;
 }
 
+
+/* CSS for Mobile */
 
 @media (max-width: 600px) {
     #page {
@@ -126,6 +128,14 @@ li.active {
     }
     .nav li a img {
         height: 25px;
+    }
+
+    .imagelogo {
+        margin-left: 25%;
+    }
+
+    .tab-content {
+        width: 25em;
     }
 }
 

@@ -23,14 +23,13 @@ button {
 
 .basic-btn {
     margin-top: 2em;
-    color: #000;
     background: linear-gradient(#dddddd, #888888);
-    color: black;
+    color: #333;
     height: 2em;
     float: right;
     width: 10rem;
     font-size: 0.9rem;
-    font-weight: 900;
+    font-weight: 600;
     padding: 0;
 }
 
@@ -58,8 +57,7 @@ h2 {
     display: block;
     margin-bottom: 20px;
     color: red;
-    border: 2px solid red;
-    font-weight: bold;
+    border: 1px solid red;
     background: #FCFF95;
 }
 
