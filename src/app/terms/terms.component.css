@@ -19,6 +19,10 @@ header {
     margin:0;
 }
 
+.form-container {
+    position: absolute;
+}
+
 #page img {
     margin-top:30px;
 }
