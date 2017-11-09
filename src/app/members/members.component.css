@@ -108,12 +108,9 @@ li.active {
 }
 
 
-/* CSS for Mobile */
+/* CSS for Mobile - iphone 6 */
 
 @media (max-width: 600px) {
-    #page {
-        padding:1em;
-    }
     #toolbar {
         width:90%;
         margin-left: -45%;
@@ -121,6 +118,10 @@ li.active {
 
     header{
         width: 23rem
+    }
+
+    .container {
+        padding-left: 0;
     }
 
     .nav-tabs {
@@ -136,6 +137,10 @@ li.active {
 
     .tab-content {
         width: 25em;
+    }
+
+    .iframe-tickets-wrapper div iframe {
+        width: 41rem;
     }
 }
 
