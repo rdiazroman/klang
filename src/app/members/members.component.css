@@ -116,6 +116,11 @@ li.active {
         margin-left: -45%;
     }
 
+    #page {
+        overflow-x: unset;
+        width: 22rem;
+    }
+
     header{
         width: 23rem
     }
@@ -132,15 +137,21 @@ li.active {
     }
 
     .imagelogo {
-        margin-left: 25%;
+        margin-left: 20%;
     }
 
     .tab-content {
         width: 25em;
     }
 
-    .iframe-tickets-wrapper div iframe {
-        width: 41rem;
+    .iframeTickets {
+        width: 20rem;
+        -moz-transform: scale(0.50);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.50);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.50);
+        -webkit-transform-origin: 0 0;
     }
 }
 
