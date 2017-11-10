@@ -1,5 +1,6 @@
 <div class="form-container">
     <a routerLink="/signup" id="goback">Register</a>
+    <a href="mailto:rdiazroman@gmail.com" target="_top" id="goback" class="contactUs" >Contact us</a>
 
     <img src="../assets/images/login_text.png" />
 
@@ -11,6 +12,5 @@
       <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required>
 
       <button type="submit" [disabled]="!formData.valid" class="basic-btn">Log in</button>
-
   </form>
 </div>
