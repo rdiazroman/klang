@@ -8,6 +8,10 @@
     }
 }
 
+.loginForm{
+    margin-top: 3rem;
+}
+
 .contactUs {
     float: right;
 }

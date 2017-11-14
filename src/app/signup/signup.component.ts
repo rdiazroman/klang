@@ -31,7 +31,8 @@ export class SignupComponent implements OnInit {
   agreeConditions;
   users;
   css_class;
-  name;
+  vorname;
+  nachname;
 
   constructor(public af: AngularFire,private router: Router) {
       this.users = af.database.list('/Users');
@@ -62,7 +63,8 @@ export class SignupComponent implements OnInit {
 
                             var userObject = {
                                 code: formData.value.code,
-                                name: formData.value.name,
+                                vorname: formData.value.vorname,
+                                nachname: formData.value.nachname,
                                 email: formData.value.email,
                                 password: formData.value.password
                             };
