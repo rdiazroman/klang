@@ -15,3 +15,11 @@
 .contactUs {
     float: right;
 }
+
+.imagelogo {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: -3rem; 
+}
