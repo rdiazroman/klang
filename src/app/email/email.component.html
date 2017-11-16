@@ -1,7 +1,7 @@
 <div class="form-container">
 
     <a routerLink="/signup" id="goback">Register</a>
-    <a href="mailto:rdiazroman@gmail.com" target="_top" id="goback" class="contactUs" >Contact us</a>
+    <a href="mailto:klang-heimlich@lid.li" target="_top" id="goback" class="contactUs" >Kontakt</a>
 
     <br />
 
@@ -14,7 +14,7 @@
     <form #formData='ngForm' class="loginForm" (ngSubmit)="onSubmit(formData)">
 
       <input type="text" placeholder="Email address.." (ngModel)="email" name="email" class="txt" required>
-      <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt" required>
+      <input type="password" placeholder="passwort" (ngModel)="password" name="password" class="txt" required>
 
       <button type="submit" [disabled]="!formData.valid" class="basic-btn">Log in</button>
   </form>

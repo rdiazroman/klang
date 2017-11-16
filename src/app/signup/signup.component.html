@@ -2,7 +2,7 @@
     <div class="form-container">
 
       <a routerLink="/login-email" id="goback">Login</a>
-      <a href="mailto:rdiazroman@gmail.com" target="_top" id="goback" class="contactUs" >Contact us</a>
+      <a href="mailto:klang-heimlich@lid.li" target="_top" id="goback" class="contactUs" >Kontakt</a>
 
       <br />
 
@@ -19,11 +19,11 @@
         <input type="text" placeholder="vorname" (ngModel)="vorname" name="vorname" class="txt form-control text-line" required>
         <input type="text" placeholder="nachname" (ngModel)="nachname" name="nachname" class="txt form-control text-line" required>
         <input type="text" placeholder="e-mail" (ngModel)="email" name="email" class="txt form-control text-line" required>
-        <input type="password" placeholder="Password" (ngModel)="password" name="password" class="txt form-control text-line" required>
-        <input type="password" placeholder="Retype Password" (ngModel)="password2" name="password2" class="txt form-control text-line" required>
+        <input type="password" placeholder="passwort" (ngModel)="password" name="password" class="txt form-control text-line" required>
+        <input type="password" placeholder="Passwort wiederholen" (ngModel)="password2" name="password2" class="txt form-control text-line" required>
 
         <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
-        Agree with <a routerLink="/terms"> terms </a>
+        <a routerLink="/terms"> AGB akzeptieren </a>
 
 
         <button type="submit" class="basic-btn">Send</button>
