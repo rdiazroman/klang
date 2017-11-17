@@ -31,8 +31,8 @@ export class EmailComponent implements OnInit {
       console.log(formData.value);
 
       this.af.auth.login({
-        email: formData.value.email,
-        password: formData.value.password
+        email: formData.value.email.trim(),
+        password: formData.value.password.trim()
       },
       {
         provider: AuthProviders.Password,

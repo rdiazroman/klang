@@ -56,8 +56,8 @@ export class SignupComponent implements OnInit {
                 if (formData.value.password == formData.value.password2) {
 
                     this.af.auth.createUser({
-                        email: formData.value.email,
-                        password: formData.value.password
+                        email: formData.value.email.trim(),
+                        password: formData.value.password.trim()
                     }).then(
                         (success) => {
 
