@@ -23,7 +23,7 @@
 }
 
 form {
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .form-container {
@@ -36,4 +36,12 @@ form {
     display: block;
     margin: 0 auto;
     margin-top: -3rem;
+}
+
+.imageRegister {
+
+}
+
+form input {
+    height: 2rem;
 }
