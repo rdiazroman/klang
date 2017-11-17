@@ -38,8 +38,10 @@ form {
     margin-top: -3rem;
 }
 
-.imageRegister {
-
+.termsLink {
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    position: absolute;    
 }
 
 form input {

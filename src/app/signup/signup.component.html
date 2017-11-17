@@ -23,7 +23,7 @@
         <input type="password" placeholder="Passwort wiederholen" (ngModel)="password2" name="password2" class="txt form-control text-line" required>
 
         <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
-        <a routerLink="/terms"> AGB akzeptieren </a>
+        <a class="termsLink" routerLink="/terms"> AGB akzeptieren </a>
 
 
         <button type="submit" class="basic-btn">Send</button>
