@@ -65,8 +65,7 @@ export class SignupComponent implements OnInit {
                                 code: formData.value.code,
                                 vorname: formData.value.vorname,
                                 nachname: formData.value.nachname,
-                                email: formData.value.email,
-                                password: formData.value.password
+                                email: formData.value.email
                             };
 
                             // Master codes
