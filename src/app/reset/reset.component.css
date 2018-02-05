@@ -23,3 +23,15 @@
     margin: 0 auto;
     margin-top: -3rem;
 }
+
+.resetText {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.red {
+    color: red;
+}

@@ -5,6 +5,7 @@ import { Observable } from "rxjs/Rx";
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/take';
+import * as firebase from 'firebase';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -20,5 +21,7 @@ export class AuthGuard implements CanActivate {
         (!authenticated) this.router.navigate([ '/login' ]);
       })
     }
+
+
 
 }

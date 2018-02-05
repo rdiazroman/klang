@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import { Router } from '@angular/router';
 import { moveIn, fallIn } from '../router.animations';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-email',
@@ -15,6 +16,9 @@ export class ResetComponent implements OnInit {
     state: string = '';
     error: any;
     email: any;
+    myClass = [];
+    myClassEmail = [];
+    emailErrorText = '';
 
     constructor(public af: AngularFire,private router: Router) {
       this.af.auth.subscribe(auth => {
@@ -22,26 +26,33 @@ export class ResetComponent implements OnInit {
           this.router.navigateByUrl('/members');
         }
       });
+      this.myClass.push('hidden');
+      this.myClassEmail.push('hidden');
   }
 
 
   onSubmit(formData) {
+
     if(formData.valid) {
 
       let email = formData.value;
-
       var auth = firebase.auth();
+      var self = this;
 
-      console.log(1);
-      auth.sendPasswordResetEmail(email).then(function() {
-        console.log("email sent!");
+      auth.sendPasswordResetEmail(formData.value.email).then(function() {
+           self.myClass = [];
+           self.myClassEmail.push('hidden');
       }).catch(function(error) {
-        console.log(error);
+          console.log(error);
+            self.emailErrorText = error.message;
+           self.myClassEmail = [];
       });
-      console.log(2);
+
 
 
     }
+
+
   }
 
   ngOnInit() {
