@@ -224,4 +224,7 @@ div.desc {
     .nav li a img {
         height: 25px;
     }
+    .iframeTickets {
+        width: 40rem;
+    }
 }

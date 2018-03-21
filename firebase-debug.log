@@ -1,0 +1,31 @@
+[debug] [2018-03-21T08:35:25.176Z] ----------------------------------------------------------------------
+[debug] [2018-03-21T08:35:25.178Z] Command:       /Users/rubendiaz/.nvm/versions/node/v8.4.0/bin/node /Users/rubendiaz/.nvm/versions/node/v8.4.0/bin/firebase deploy
+[debug] [2018-03-21T08:35:25.178Z] CLI Version:   3.12.0
+[debug] [2018-03-21T08:35:25.178Z] Platform:      darwin
+[debug] [2018-03-21T08:35:25.179Z] Node Version:  v8.4.0
+[debug] [2018-03-21T08:35:25.179Z] Time:          Wed Mar 21 2018 09:35:25 GMT+0100 (CET)
+[debug] [2018-03-21T08:35:25.179Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-21T08:35:25.189Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-21T08:35:25.189Z] > authorizing via signed-in user
+[debug] [2018-03-21T08:35:25.190Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-21T08:35:25.190Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/HDpxPnB6DgRw-a0gI_ndaWz5ojryY-i0xfyukJbxbPw',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 21 2018 09:35:25 GMT+0100 (CET)
+[debug] [2018-03-21T08:35:25.429Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T08:35:25.444Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/klang-e9507  
+ Wed Mar 21 2018 09:35:25 GMT+0100 (CET)
+[debug] [2018-03-21T08:35:26.274Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-21T08:35:26.275Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/klang-e9507/tokens  
+ Wed Mar 21 2018 09:35:26 GMT+0100 (CET)
+[debug] [2018-03-21T08:35:27.513Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'klang-e9507'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-03-21T08:35:29.601Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/klang-e9507/uploads/-L86giUK4qZJJKbxVp9l?fileCount=40&message=  
+ Wed Mar 21 2018 09:35:29 GMT+0100 (CET)
