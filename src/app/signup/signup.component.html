@@ -12,7 +12,9 @@
 <section id="header">
 				<header>
 
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+<!--
+		<svg class="logo-header-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
  viewBox="0 0 300.5 1868.9" enable-background="new 0 0 300.5 1868.9" xml:space="preserve">
 <g>
 <path fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="10" d="M151.8,9.5l63.7,106.9h-38.3
@@ -52,10 +54,12 @@
 </g>
 </svg>
 
-					<img style="width: 80%" src="../../assets/images/logo.svg">
+-->
+
+				<img style="width: 80%" src="../../assets/images/logo.svg">
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Willkommen</a>
+					<a href="#register" class="button style2 scrolly-middle">Willkommen</a>
 				</footer>
 </section>
 
@@ -268,7 +272,7 @@
 	<section id="banner2" class=" style2" style="margin-top: 60px">
 		<section>
 		  <header>
-		  	<h2 style="font-size: 5em; margin-bottom: 90px">Tikets kaufen</h2>
+		  	<h2 style="font-size: 5em; margin-bottom: 90px">Tickets kaufen</h2>
 		  </header>
 		  <div class="container ">
 		      <div class="row">
@@ -277,8 +281,8 @@
 									<div class="row">
 										<div class="12u">
 											<ul class="actions">
-												<li><a href="#login" class="button style2 scrolly-middle">login</a></li>
-												<li><a href="#register" class="button style2 scrolly-middle">register</a></li>
+												<li><a href="#login" class="button scrolly-middle">login</a></li>
+												<li><a href="#register" class="button scrolly-middle">register</a></li>
 											</ul>
 										</div>
 									</div>
@@ -293,13 +297,11 @@
 
 
 
-<section id="login" class=" style2" style="margin-top: 60px">
+<section id="login" class="banner2 style2" style="margin-top: 60px">
   <section>
       <header>
-      	<h2 >Tikets kaufen</h2>
       	<h2 style="font-size: 5em;">Login</h2>
      	</header>
-
 
       <div class="container">
   				<form #formData='ngForm' class="loginForm" (ngSubmit)="onSubmitLogin(formData)">
@@ -326,9 +328,8 @@
 
 
 
-  <section id="register">
+  <section id="register" class="banner2">
       <header>
-          <h2 >Tikets kaufen</h2>
        <h2 style="font-size: 5em;">Register</h2>
      </header>
     <div class="container">
@@ -356,7 +357,7 @@
   								<input type="password" placeholder="Passwort wiederholen" (ngModel)="password2" name="password2" class="txt form-control text-line" required>
   							</div>
 
-                <div class="6u">
+                <div class="6u abg-checkbox">
                   <input type="checkbox" [checked]="agreeConditions" (change)="agreeConditions = !agreeConditions" />
                   <a class="termsLink" routerLink="/terms"> AGB akzeptieren </a>
                 </div>
@@ -364,14 +365,16 @@
               </div>
 
 
-  						<div class="row">
-  							<div class="12u">
-  								<ul class="actions">
-  									<li><button type="submit" class="basic-btn">Send</button></li>
-  									<li><input type="reset" class="style3" value="Clear Form" /></li>
-  								</ul>
-  							</div>
-  						</div>
+              <div class="row">
+ 						   <div class="col-lg-12">
+ 								<ul class="actions">
+ 									<li><input type="submit" value="Submit" /></li>
+ 									<li><input type="reset" class="style3" value="Clear Form" /></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+
+
 
   					</form>
 

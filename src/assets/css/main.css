@@ -2069,13 +2069,13 @@ path, line, circle, polygon {
 
 /* --- */
 
-	#banner2 {
+	#banner2, .banner2 {
 		position: relative;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #123033cc url("images/banner.svg") bottom center no-repeat;
-		padding: 5em 0 5em 0;
+		background: #123033cc url("../images/banner.svg") bottom center no-repeat;
+		padding: 0rem 0 1rem 0;
 		margin: 0;
 		background-size: 125% auto;
 	}
@@ -2559,6 +2559,8 @@ path, line, circle, polygon {
 						background-size: 45px 33px;
 					}
 
+
+
 		/* Banner */
 
 			#banner {
@@ -2602,4 +2604,10 @@ path, line, circle, polygon {
 				opacity: 0.5;
 			}
 
+	}
+
+	.logo-header-svg {
+		left: auto;
+		right: auto;
+		width: 100%;
 	}

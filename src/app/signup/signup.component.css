@@ -20,6 +20,11 @@
     display: none;
 }
 
+.abg-checkbox {
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+
+}
 .imagelogo {
     width: 5rem;
     height: 5rem;
