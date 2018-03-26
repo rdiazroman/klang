@@ -19,7 +19,12 @@ header {
     margin:0;
 }
 
+h3{
+  color: black;
+}
+
 .form-container {
+    opacity: 0.7;
     position: absolute;
 }
 

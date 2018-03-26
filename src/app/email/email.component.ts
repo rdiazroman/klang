@@ -28,7 +28,6 @@ export class EmailComponent implements OnInit {
 
   onSubmit(formData) {
     if(formData.valid) {
-      console.log(formData.value);
 
       this.af.auth.login({
         email: formData.value.email.trim(),

@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: #183026;
-    background-image: url('assets/images/bg.jpg');
+    background-image: url('assets/images/overlay.png'), url('assets/images/bg.jpg');
     background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
+    background-size: auto, cover;
 		background-position: top left, center 0;
 		background-attachment: fixed, fixed;
     font-family: 'Roboto Condensed', sans-serif;

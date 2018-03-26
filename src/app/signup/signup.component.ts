@@ -38,6 +38,27 @@ export class SignupComponent implements OnInit {
       this.users = af.database.list('/Users');
   }
 
+  onSubmitLogin(formData) {
+
+      this.af.auth.login({
+        email: formData.value.email.trim(),
+        password: formData.value.password.trim()
+      },
+      {
+        provider: AuthProviders.Password,
+        method: AuthMethods.Password,
+      }).then(
+        (success) => {
+        console.log('success: ' + success);
+        this.router.navigate(['/members']);
+      }).catch(
+        (err) => {
+        console.log(err);
+        this.error = err;
+      })
+
+  }
+
 
   onSubmit(formData) {
 

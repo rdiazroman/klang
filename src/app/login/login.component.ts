@@ -23,35 +23,6 @@ export class LoginComponent implements OnInit {
 
   }
 
-  /*
-  loginFb() {
-    this.af.auth.login({
-      provider: AuthProviders.Facebook,
-      method: AuthMethods.Popup,
-    }).then(
-        (success) => {
-        this.router.navigate(['/members']);
-      }).catch(
-        (err) => {
-        this.error = err;
-      })
-  }
-
-  loginGoogle() {
-    this.af.auth.login({
-      provider: AuthProviders.Google,
-      method: AuthMethods.Popup,
-    }).then(
-        (success) => {
-        this.router.navigate(['/members']);
-      }).catch(
-        (err) => {
-        this.error = err;
-      })
-  }
-  */
-
-
   ngOnInit() {
   }
 

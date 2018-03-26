@@ -1331,22 +1331,6 @@ path, line, circle, polygon {
 
 /* Basic */
 
-	body {
-		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
-		background-position: top left, center 0;
-		background-attachment: fixed, fixed;
-        font-family: 'Roboto Condensed', sans-serif;
-		font-size: 18pt;
-		line-height: 1.75em;
-		font-weight: 100;
-		letter-spacing: 1px;
-		color: #3a3939;
-		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-		-webkit-text-stroke: 0.25px;
-	}
 
 		body.is-scroll {
 			background-attachment: scroll, scroll;
@@ -1396,20 +1380,21 @@ path, line, circle, polygon {
         font-family: 'Oswald', sans-serif;
 	}
 
+	/*
 	h3 {
 		font-size: 1em;
 		letter-spacing: 5px;
-        color: #fff
+  	color: #fff
 	}
+	*/
 
-    h7 {
-		font-size: 9em;
-
-        color: #fff;
-       font-family: 'Qwigley', cursive;
-
-
-
+    h3 {
+		font-size: 6em;
+    color: #fff;
+  	font-family: 'Qwigley', cursive;
+		font-weight: 100;
+    line-height: 1.75em;
+		text-transform: capitalize;
 	}
 
 	strong, b {
@@ -1746,6 +1731,7 @@ path, line, circle, polygon {
 		text-align: center;
 		border-radius: 3em;
 		font-weight: 400;
+		font-size: 2.4rem;
 	}
 
 		input[type="button"]:hover,
@@ -2342,7 +2328,7 @@ path, line, circle, polygon {
 				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
-				background-position: top left, top center;
+				background-position: center 0px;
 				background-attachment: scroll, scroll;
 				font-size: 14pt;
 			}
