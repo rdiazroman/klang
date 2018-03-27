@@ -21,6 +21,7 @@ export class SignupComponent implements OnInit {
 
   state: string = '';
   error: any;
+  errorLogin: any;
   availableCodes = [];
   codes;
   formData;
@@ -39,7 +40,7 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmitLogin(formData) {
-
+      debugger;
       this.af.auth.login({
         email: formData.value.email.trim(),
         password: formData.value.password.trim()
@@ -54,7 +55,7 @@ export class SignupComponent implements OnInit {
       }).catch(
         (err) => {
         console.log(err);
-        this.error = err;
+        this.errorLogin = err;
       })
 
   }
