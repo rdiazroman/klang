@@ -27,7 +27,9 @@ export class SignupComponent implements OnInit {
   formData;
   code;
   email;
+  emailLogin;
   password;
+  passwordLogin;
   password2;
   agreeConditions;
   users;
@@ -39,11 +41,10 @@ export class SignupComponent implements OnInit {
       this.users = af.database.list('/Users');
   }
 
-  onSubmitLogin(formData) {
-      debugger;
+  onSubmitLogin(formDataLogin) {
       this.af.auth.login({
-        email: formData.value.email.trim(),
-        password: formData.value.password.trim()
+        email: formDataLogin.value.emailLogin.trim(),
+        password: formDataLogin.value.passwordLogin.trim()
       },
       {
         provider: AuthProviders.Password,
@@ -152,6 +153,10 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
     this.codes = this.af.database.list('Codes',{preserveSnapshot:true});
+
+    this.email = "";
+    this.emailLogin = "";
+    this.passwordLogin = "";
 
     this.codes.subscribe(snapshots => {
       snapshots.forEach(snapshot => {

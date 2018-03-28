@@ -38,3 +38,17 @@
     margin-left: 0.6rem;
     position: absolute;
 }
+
+.loginForm input{
+    font-size: 1em;
+}
+
+.loginForm .txt {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.loginForm .row {
+  margin: auto;
+}

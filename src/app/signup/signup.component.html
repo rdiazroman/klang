@@ -272,7 +272,7 @@
 	<section id="banner2" class=" style2" style="margin-top: 60px">
 		<section>
 		  <header>
-		  	<h2 style="font-size: 5em; margin-bottom: 90px">Tickets kaufen</h2>
+		  	<h2 style="font-size: 3.5em; margin-bottom: 90px">Tickets kaufen</h2>
 		  </header>
 		  <div class="container ">
 		      <div class="row">
@@ -300,29 +300,28 @@
 <section id="login" class="banner2 style2" style="margin-top: 60px">
   <section>
       <header>
-      	<h2 style="font-size: 5em;">Login</h2>
+      	<h2 style="font-size: 3.5em;">Login</h2>
      	</header>
 
           <div class="container">
-      			<form #formData='ngForm' class="loginForm" (ngSubmit)="onSubmitLogin(formData)">
-          	         <input type="text" placeholder="Email address.." (ngModel)="email" name="email" class="txt" required>
-        			 <input type="password" placeholder="passwort" (ngModel)="email" name="email" class="txt" required>
+      			<form #formDataLogin='ngForm' class="loginForm" (ngSubmit)="onSubmitLogin(formDataLogin)">
+                <input type="text" placeholder="Email address.." (ngModel)="emailLogin" name="emailLogin" class="txt" required>
+                <input type="password" placeholder="passwort" (ngModel)="passwordLogin" name="passwordLogin" class="txt" required>
 
-                     <br />
+                   <br />
 
-                     <div class="10u">
-                         <span class="error" *ngIf="errorLogin" [@fallIn]='state'>{{ errorLogin }}</span>
-                     </div>
+                   <div class="10u">
+                       <span class="error" *ngIf="errorLogin" [@fallIn]='state'>{{ errorLogin }}</span>
+                   </div>
 
-
-    				 <div class="row">
-    				   <div class="col-lg-12">
-    						<ul class="actions">
-    							<li><input type="submit" value="Submit" /></li>
-    							<li><input type="reset" class="style3" value="Clear Form" /></li>
-    						</ul>
-    					</div>
-    				</div>
+          				 <div class="row">
+          				   <div class="col-lg-12">
+          						<ul class="actions">
+          							<li><input type="submit" value="Submit" /></li>
+          							<li><input type="reset" class="style3" value="Clear Form" /></li>
+          						</ul>
+          					</div>
+          				</div>
 
               </form>
             </div>
@@ -336,7 +335,7 @@
 
   <section id="register" class="banner2">
       <header>
-       <h2 style="font-size: 5em;">Register</h2>
+       <h2 style="font-size: 3.5em;">Register</h2>
      </header>
     <div class="container">
         <div class="row">
