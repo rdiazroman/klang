@@ -47,8 +47,20 @@
     width: 50%;
     margin: auto;
     margin-top: 1rem;
+    font-size: 2rem;
+    padding: 2rem;
 }
 
 .loginForm .row {
-  margin: auto;
+    margin: auto;
+}
+
+.registerForm .txt {
+    margin: auto;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.registerForm .row {
+    margin: auto;
 }
