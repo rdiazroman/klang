@@ -1640,23 +1640,23 @@ path, line, circle, polygon {
 	}
 
 	form .formerize-placeholder {
-		color: #5a5959 !important;
+		color: #999 !important;
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #5a5959 !important;
+		color: #999 !important;
 	}
 
 	form :-moz-placeholder {
-		color: #5a5959 !important;
+		color: #999 !important;
 	}
 
 	form ::-moz-placeholder {
-		color: #5a5959 !important;
+		color: #999 !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: #5a5959 !important;
+		color: #999 !important;
 	}
 
 	form ::-moz-focus-inner {

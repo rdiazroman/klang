@@ -102,11 +102,12 @@ h2 {
   content: '';
   position: absolute;
   width: 40px;
-  height: 10px;
+  height: 40px;
   background: #E2E4E6;
+  opacity: 0.5;
   top: 10px;
-  left: -5px;
-  animation: spin 1.2s infinite;
+  left: 0px;
+  animation: spin 5.2s infinite;
 }
 
 @keyframes spin {

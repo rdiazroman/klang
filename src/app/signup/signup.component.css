@@ -23,7 +23,7 @@
 .abg-checkbox {
   margin-top: -3rem;
   margin-bottom: 4rem;
-
+  margin-left: -8rem;
 }
 .imagelogo {
     width: 5rem;
@@ -37,9 +37,12 @@
     margin-top: 0.6rem;
     margin-left: 0.6rem;
     position: absolute;
+    color: white;
+    font-weight: 500;
 }
 
-.loginForm input{
+.loginForm input,
+.registerForm input {
     font-size: 1em;
 }
 
@@ -51,6 +54,7 @@
     padding: 2rem;
 }
 
+
 .loginForm .row {
     margin: auto;
 }
@@ -59,8 +63,21 @@
     margin: auto;
     font-size: 2rem;
     padding: 2rem;
+    width: 70%;
+    margin-top: 1rem;
 }
 
 .registerForm .row {
     margin: auto;
+}
+
+.logo-header-svg {
+    margin-top: -330px;
+    height: 442px;
+    margin-left: -50px;
+}
+
+.image-logo {
+    width: 70%;
+    margin-top: -15rem;
 }
