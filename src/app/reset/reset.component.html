@@ -1,26 +1,21 @@
 <div class="form-container">
 
-    <a routerLink="/signup" id="goback">Register</a> / <a routerLink="/login-email" id="goback">Login</a>
+    <a routerLink="/signup" id="goback">Back</a>
     <a href="mailto:klang.heimlich.zh@gmail.com" target="_top" id="goback" class="contactUs" >Kontakt</a>
 
-    <br />
-
-    <img class="imagelogo" src="../assets/images/logo.svg" />
-
-    <br />
     <p class="resetText">Reset Passwort:</p>
 
     <span class="error" *ngIf="error" [@fallIn]='state'>{{ error }}</span>
 
     <form #formData='ngForm' class="resetForm" (ngSubmit)="onSubmit(formData)">
       <input type="email" placeholder="Email..." (ngModel)="email" name="email" class="txt" required>
-      <button type="submit" [disabled]="!formData.valid" class="basic-btn">Reset</button>
+      <button type="submit" [disabled]="!formData.valid" class="">Reset</button>
     </form>
 
     <div id="emailSent" class={{myClass}}>
         E-Mail mit neuem Passwort geschickt!
     </div>
     <div id="emailError" class={{myClassEmail}}>
-        Error: {{emailErrorText}}
+        {{emailErrorText}}
     </div>
 </div>

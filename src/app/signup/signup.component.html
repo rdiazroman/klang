@@ -349,8 +349,8 @@
       			<form #formDataLogin='ngForm' class="loginForm" (ngSubmit)="onSubmitLogin(formDataLogin)">
                     <input type="text" placeholder="Email address.." (ngModel)="emailLogin" name="emailLogin" class="txt" required>
                     <input type="password" placeholder="passwort" (ngModel)="passwordLogin" name="passwordLogin" class="txt" required>
-
-                       <br />
+                    <a routerLink="/reset" id="reset">Passwort vergessen?</a>
+                    <br />
 
                      <div class="10u">
                        <span class="error" *ngIf="errorLogin" [@fallIn]='state'>{{ errorLogin }}</span>
@@ -363,6 +363,8 @@
       							<li><input type="reset" class="style3" value="Clear Form" /></li>
       						</ul>
       					</div>
+
+
       				</div>
 
               </form>
