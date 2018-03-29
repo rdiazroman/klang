@@ -1829,14 +1829,12 @@ path, line, circle, polygon {
 				top: 0;
 				width: 50%;
 				height: 100%;
-				background: #152E33;
 				overflow: hidden;
 			}
 
 				.box.style1 .image img {
 					position: absolute;
 					top: 0;
-					height: 100%;
 					width: auto;
 				}
 

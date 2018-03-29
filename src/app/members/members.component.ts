@@ -31,5 +31,6 @@ export class MembersComponent implements OnInit {
 
 
   ngOnInit() {
+     window.scrollTo(0, 0);
   }
 }

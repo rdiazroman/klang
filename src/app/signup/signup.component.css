@@ -20,6 +20,15 @@
     display: none;
 }
 
+.container-gallerie {
+  margin-top: -16rem;
+}
+
+.weare {
+  width: 80%;
+  margin: auto;
+}
+
 .abg-checkbox {
   margin-top: -3rem;
   margin-bottom: 4rem;
@@ -80,4 +89,28 @@
 .image-logo {
     width: 70%;
     margin-top: -15rem;
+}
+
+.party-element p {
+  font-size: 1.8rem;
+}
+
+.party-element img {
+  margin-top: 15rem;
+}
+
+.party-element.box {
+  margin-top: 1rem;
+}
+
+.videos-container .col-xs-6 {
+  width: 100%;
+}
+.videos-container .row {
+  text-align: center;
+  margin: auto;
+}
+
+#tickets .row {
+  margin: -73px 0 0px 44px;
 }

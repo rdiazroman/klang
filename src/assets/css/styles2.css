@@ -2,7 +2,7 @@
    min-height: 110%;
   min-width: 100%;
     padding-bottom: 70px;
-    margin-top: 90px;
+    margin-top: -90px;
     background: #4CA1AF;
   /* fallback for old browsers */
   background: linear-gradient(0deg, rgba(255, 51, 51, 0.15), rgba(153, 255, 51, 0)) no-repeat border-box, linear-gradient(90deg, rgba(0, 255, 255, 0.1), rgba(0, 0, 0, 0.35)) no-repeat border-box, #acd2b326;

@@ -3,21 +3,15 @@
 <head>
   <title>Klang Heimlich Zürich</title>
   <meta charset="utf-8" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
   <base href="/">
-<link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+  <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.poptrox.min.js"></script>
-  <script src="assets/js/skel.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+
 
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
@@ -32,9 +26,27 @@
   <meta property="og:description" content="Klang Heimlich Zürich" />
   <meta property="og:image" content="assets/images/logokh.png" />
 
-
 </head>
 <body style="background-position: center 0px;">
   <app-root><div class="loading"></div></app-root>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src='https://cdn.rawgit.com/soundcloud/soundcloud-custom-player/master/js/soundcloud.player.api.js'></script>
+  <script src='https://cdn.rawgit.com/soundcloud/soundcloud-custom-player/master/js/sc-player.js'></script>
+  <script>
+     $('.smooth-goto').on('click', function() {
+     $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 2000);
+     return false;
+    });
+ </script>
 </body>
 </html>
