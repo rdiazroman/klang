@@ -114,3 +114,51 @@
 #tickets .row {
   margin: -73px 0 0px 44px;
 }
+
+.resetLink {
+    color: white;
+    margin-left: 23rem;
+    text-decoration: underline;
+}
+
+/* DivTable.com */
+.divTable{
+  display: table;
+  width: 65%;
+  margin: auto;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding: 10px 18px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divTable .img-artist {
+  width: 12rem;
+  height: auto;
+}
+
+.img-element{
+  width: 50rem;
+  height: auto;
+}
