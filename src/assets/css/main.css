@@ -1116,6 +1116,27 @@ path, line, circle, polygon {
 
 	@media screen and (max-width: 736px) {
 
+		.actionloginregister {
+			 margin-left: -100px !important;
+		}
+ 
+		.poptrox-popup {
+			margin-left: -84px;
+			margin-top: -100px;
+		}
+
+		.resetLink {
+			margin-left: 0 !important;
+		}
+
+		.loginForm .txt {
+			width: 90% !important;
+		}
+
+		.abg-checkbox {
+			margin: 0 !important;
+		}
+
 		.row > * {
 			padding: 20px 0 0 20px;
 		}
