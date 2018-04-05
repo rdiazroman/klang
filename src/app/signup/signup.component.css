@@ -9,7 +9,11 @@
 }
 
 .contactUs {
-    float: right;
+  float: right;
+  font-size: 4.8rem;
+  color: white;
+  margin-left: 93px;
+  text-decoration: underline;
 }
 
 .red {
@@ -101,6 +105,7 @@
 
 .party-element.box {
   margin-top: 1rem;
+  height: 53rem;
 }
 
 .videos-container .col-xs-6 {
@@ -124,7 +129,7 @@
 /* DivTable.com */
 .divTable{
   display: table;
-  width: 65%;
+  width: 45%;
   margin: auto;
 }
 .divTableRow {
@@ -136,7 +141,7 @@
 }
 .divTableCell, .divTableHead {
 	display: table-cell;
-	padding: 10px 18px;
+	padding: 3px 18px;
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -158,56 +163,22 @@
   height: auto;
 }
 
+.guests-wrapper {
 
-/* DivTable.com */
-.divTable2{
-  display: table;
-  width: 120%;
-  margin: auto;
-}
-.divTableRow2 {
-	display: table-row;
-}
-.divTableHeading2 {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableCell2, .divTableHead2 {
-	display: table-cell;
-	padding: 10px 18px;
-    font-size: 1.5rem;
-}
-.divTableCell2 h2 {
-    text-align: left;
-    margin: 0;
-    margin-top: -74px;
-    position: absolute;
-}
-.divTableHeading2 {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
-.divTableFoot2 {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
-}
-.divTableBody2 {
-	display: table-row-group;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.divTable2 .img-artist {
-  width: 250rem;
-  height: auto;
+.guests-container {
+
 }
-
-
-
-
 
 .img-element{
-  width: 50rem;
-  height: auto;
+  width: 52rem;
+      height: 12rem;
+      margin: 7px;
+      padding-left: 6px;
+}
+
+.gallery {
+  margin: auto;
+  width: 80rem;
 }
