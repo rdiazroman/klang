@@ -2474,6 +2474,19 @@ path, line, circle, polygon {
 				padding-left: 0.25em;
 			}
 
+			.img-element {
+				width: 27rem !important;
+				height: 18rem !important;
+			}
+
+			.gallery {
+				width: 100% !important;
+			}
+
+			.party-element.box {
+				height: auto !important;
+			}
+
 		/* Button */
 
 			input[type="button"],
